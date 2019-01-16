@@ -46,7 +46,7 @@ WantedBy=multi-user.target\n\
 
 
 #RUN systemctl daemon-reload
-RUN systemctl enable cobblersync.service
+#RUN systemctl enable cobblersync.service
 
 # add run file
 #ADD entrypoint.sh /entrypoint.sh
