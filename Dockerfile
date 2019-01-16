@@ -20,9 +20,8 @@ RUN set -ex                           \
     && yum clean -y expire-cache
 
 # volumes
-VOLUME /vagrant               \      
-       /systems               \
-       /sys/fs/cgroup
+VOLUME /sys/fs/cgroup         \
+       /vagrant               
 
 # ports #tcp for all except 69 and 547 are UDP
 EXPOSE 67/udp 67/tcp
