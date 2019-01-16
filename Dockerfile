@@ -45,7 +45,7 @@ WantedBy=multi-user.target\n\
 >> /etc/systemd/system/cobblercheck.service
 
 
-RUN systemctl daemon-reload
+#RUN systemctl daemon-reload
 RUN systemctl enable cobblersync.service
 
 # add run file
